@@ -1,6 +1,17 @@
 .main_container {
     display: flex;
-    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/Img/fondo.jpg);
+    background-size: 100%;
+    font-weight: bolder;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    height: 100px;
     width: 100%;
 }
 
@@ -9,18 +20,19 @@
     margin-right: 40px;
     justify-content: flex-end;
     width: 100%;
-    height: 73px;
-    align-items: center;
+    height: auto;
+    align-self: center;
 }
 
 .button {
     display: flex;
     width: 100px;
     height: 55px;
+    color: black;
     border-radius: 20px;
     background-color: #CECECE;
     font-size: 24px;
-    font-family: Inter;
+    font-family: "Inter";
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -32,17 +44,17 @@
 }
 
 .hero {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Inter;
+    font-family: 'Inter';
 }
 
 figure {
     width: 350px;
-    margin: 0;
+    margin-top: 50px;
 }
 
 img {
@@ -51,22 +63,134 @@ img {
 }
 
 .text_container {
+    text-align: left;
+    margin-top: 35px;
     width: 500px;
     height: auto;
     font-size: 25px;
 }
 
-.name_container {
+.name {
     position: absolute;
-    right: 150px;
-    top: 50px;
+    right: 100px;
+    top: 100px;
     width: 350px;
     font-size: 40px;
-    color: #3b4282;
+    color: #ffffff;
     text-align: center;
 }
 
+.age {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    width: 350px;
+    font-size: 40px;
+    color: #23c5f7;
+    text-align: center;
+}
+
+.city {
+    position: absolute;
+    right: 100px;
+    top: 75%;
+    width: 350px;
+    font-size: 40px;
+    color: #dd0808;
+    text-align: center;
+}
+
+.redes {
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+.linkedin {
+    background: linear-gradient(gray, white) ;
+    border-radius: 10px;
+}
+
+.github {
+    background: linear-gradient(gray, white) ;
+    border-radius: 10px;
+}
+
+.linkedin_icon {
+    width: 200px;
+    height: auto;
+}
+
+.github_icon {
+    width: 150px;
+    height: auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*portafolio*/
+.portfolio_container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.project_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.project_info {
+    flex: 1;
+}
+
+.project_info h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.project_info p {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.project_info a {
+    font-size: 0.9em;
+    color: #333;
+    text-decoration: none;
+}
+
+.project_info a:hover {
+    text-decoration: underline;
+}
+
+.project_image {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    background-color: #e9e9e9;
+}
+
 footer {
+    width: 100%;
+    height: auto;
     font-family: Inter;
+    font-size: 30px;
     text-align: center;
 }

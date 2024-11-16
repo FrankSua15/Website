@@ -7,26 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main_container">
-        <div class="header">
-            <div class="button">Inicio</div>
+    <main class="main_container">
+        <!--Barra de navegación-->
+        <div class="nav">
+            <div class="header">
+                <div class="button">Inicio</div>
+            </div>
         </div>
-    </div>
-    <div class="hero">
-        <figure>
-            <img src="./Assets/yo.jpg" alt="">
-        </figure>        
-        <div class="text_container">
-            <p>Hola a todos! Soy Francisco. Bienvenidos a mi Website donde estare dando a conocer todos mis conocimientos y habilidades de desarrollo mediante la presentacion de los proyectos que veran a continuacion.<br><br>De antemano mil gracias por visitar mi Website y estare abierto a sus comentarios y feedbacks pertinentes 😁</p>
+        <!--Seccion principal-->
+        <div class="hero">
+            <figure>
+                <img src="./Assets/Img/yo.jpg" alt="Foto de Francisco">
+            </figure>        
+            <div class="text_container">
+                <p>Hola a todos! Soy Francisco. Bienvenidos a mi Website donde estare dando a conocer todos mis conocimientos y habilidades de desarrollo mediante la presentacion de los proyectos que veran a continuacion.<br><br>De antemano mil gracias por visitar mi Website y estare abierto a sus comentarios y feedbacks pertinentes 😁</p>
+            </div>
+            <div class="name_container">
+                <p class="name">Francisco Suarez</p>
+                <p class="age">27 años</p>
+                <p class="city">Villa de San Diego de Ubaté</p>
+            </div>
         </div>
-        <div class="name_container">
-            <p class="name">Francisco Suarez</p>
-            <p class="age">27 años</p>
-            <p class="city">Villa de San Diego de Ubaté</p>
-        </div>
-    </div>       
-    <footer>
-        <p>Frank - 2024</p>
-    </footer>
+        <!--Seccion redes sociales-->    
+        <div class="redes">
+            <div class="linkedin">
+                <a href="">
+                <figure class="linkedin_icon">
+                    <img src="./Assets/Icons/linkedin.svg" alt="Icono de linkedin">
+                </figure>
+                <p>Sígueme en mi red <br>  profesional</p>
+                </a>
+            </div>
+            <div class="github">
+                <a href="">
+                <figure class="github_icon">
+                    <img src="./Assets/Icons/github.svg" alt="Icono de GitHub">
+                </figure>
+                <p>Sígueme en mi GitHub</p>
+                </a>
+            </div>
+        </div>   
+        <!--Seccion portafolio-->
+        <section class="portfolio_container" id="portfolio_container">
+        <!--Los proyectos se cargan dinamicamente aqui-->
+            
+        </section>
+        <footer>
+            <p>Frank - 2024</p>
+        </footer>
+        <script src="./script.js"></script>
+    </main>
 </body>
 </html>
