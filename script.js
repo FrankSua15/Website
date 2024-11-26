@@ -77,3 +77,81 @@ function mostrarProyectos() {
 
 //LLamar la funcion//
 mostrarProyectos();
+
+//EJERCICIO TARJETAS DE RECOMENDACION//
+//Definimos array de las tarjetas//
+
+const tarjetas = [
+    {
+        titulo: "Juan Pablo - El mejor profesor",
+        descripcion: "Reto enfocado en mejorar habilidades con JavaScript.",
+        imagen: "./Assets/Img/ .jpg",
+        enlace: "#"
+    },
+    {
+        titulo: "Francisco José - Front Developer",
+        descripcion: "Reto enfocado en mejorar habilidades con JavaScript.",
+        imagen: "./Assets/Img/yo.jpg",
+        enlace: "#"
+    },
+    {
+        titulo: "Mishell Uribe - La mejor estudiante",
+        descripcion: "Reto enfocado en mejorar habilidades con JavaScript.",
+        imagen: "./Assets/Img/ .jpg",
+        enlace: "#"
+    }
+
+//Aqui puedes agregar mas tarjetas//
+];
+
+//Seleccion del contenedor donde se mostraran las tarjetas//
+
+const contenedorTarjetas = document.getElementById("main_card");
+
+//Funcion para cargar y mostrar llas tarjetas//
+
+function mostrarTarjetas() {
+    tarjetas.forEach((tarjeta, index) => {
+        //El forEach va a crear un contenedor para cada tarjeta//
+        const cardRec = document.createElement("div");
+        cardRec.classList.add("card_container");
+
+        //Crear un contenedor para la informacion de la tarjeta//
+        const cardInfo = document.createElement("div");
+        cardInfo.classList.add("card_info");
+
+        //Crear y configurar titulo de la tarjeta//
+        const cardTitulo = document.createElement("h3");
+        cardTitulo.textContent = `${tarjeta.titulo}`;
+
+        //Crear y configurar la descripcion de la tarjeta//
+        const cardDescripcion = document.createElement("p");
+        cardDescripcion.textContent = tarjeta.descripcion;
+
+        //Agregar titulo, descripcion y enlace a la seccion de info//
+        cardInfo.appendChild(cardTitulo);
+        cardInfo.appendChild(cardDescripcion);
+
+
+        //Crear y configurar la imagen de la tarjeta//
+        const cardImageContainer = document.createElement("div");
+        cardImageContainer.classList.add("card_image");
+
+        const img = document.createElement("img");
+        img.src = tarjeta.imagen;
+
+        //Agregar imagen a su contenedor//
+        cardImageContainer.appendChild(img);
+
+        //Agregar la info y la img al contenedor de la tarjeta//
+        cardRec.appendChild(cardInfo);
+        cardRec.appendChild(cardImageContainer);
+
+        //Agregar la tarjeta completa al contenedor principal//
+        contenedorTarjetas.appendChild(cardRec);
+
+    } );
+}
+
+//LLamar la funcion//
+mostrarTarjetas();
